@@ -8,11 +8,14 @@
                 url: "http://localhost:58753/api/home",
                 success : (data) => {
                     console.log(data);
+                    document.body.innerHTML = data;
                 },
                 error : (error) => {
                     console.log(error);
                 }
             })
         </script>
+        <body>
+        </body>
     </head>
 </html>

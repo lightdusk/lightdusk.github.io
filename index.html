@@ -18,11 +18,16 @@
                     }
                 })
             }
+            function reset()
+            {
+                $('#resetButton').hide();
+                $('#data').empty();
+            }
         </script>
     </head>
     <body>
         <button onclick="getData()">Click me!</button>
-        <button id='resetButton' style="display: none" onclick="$('#resetButton').hide()">Reset</button>
+        <button id='resetButton' style="display: none" onclick="reset()">Reset</button>
         <p id='data'></p>
     </body>
     

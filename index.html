@@ -4,18 +4,22 @@
         <meta charset="UTF-8"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
-            $.ajax({
-                url: "http://localhost:58753/api/home",
-                success : (data) => {
-                    console.log(data);
-                    document.body.innerHTML = data;
-                },
-                error : (error) => {
-                    console.log(error);
-                }
-            })
+            function getData()+
+            {
+                $.ajax({
+                    url: "http://localhost:58753/api/home",
+                    success : (data) => {
+                        console.log(data);
+                        document.body.innerHTML = data;
+                    },
+                    error : (error) => {
+                        console.log(error);
+                    }
+                })
+            }
         </script>
         <body>
+            <button text="Click me!" onclick="getData()"/>
         </body>
     </head>
 </html>

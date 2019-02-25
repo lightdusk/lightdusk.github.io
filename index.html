@@ -10,7 +10,7 @@
                     url: "http://localhost:58753/api/home",
                     success : (data) => {
                         console.log(data);
-                        document.body.innerHTML = data;
+                        $('body').append(data);
                     },
                     error : (error) => {
                         console.log(error);
